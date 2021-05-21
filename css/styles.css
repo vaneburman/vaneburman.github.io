@@ -45,7 +45,6 @@ h4 {
 
 p {
     font-size: 1.3rem; 
-    color: green;
 }
 
 /* utilidades */
@@ -83,7 +82,7 @@ p {
 }
 
 .boton-amarillo{
-    background-color: #e08709;
+    background-color: red;
 }
 
 .boton-verde{
