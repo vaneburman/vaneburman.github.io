@@ -47,7 +47,7 @@
                 <label for="mensaje">mensaje</label>
                 <textarea id="mensaje"></textarea>
                 
-                <input type="submit">
+                
             </fieldset>
 
             <fieldset>
@@ -67,13 +67,22 @@
                 <legend>Contacto</legend>
 
                 <p>Como desea ser Contactado:</p>
-                <label for="telefono2">Teléfono</label>
-                <input type="radio" name="contacto" value="telefono" id="telefono2">
-                <label for="correo">E-mail</label>
-                <input type="radio" name="contacto" value="correo" id="correo">
 
+                <div class="forma-contacto">
+                    <label for="telefono2">Teléfono</label>
+                    <input type="radio" name="contacto" value="telefono" id="telefono2">
+                    <label for="correo">E-mail</label>
+                    <input type="radio" name="contacto" value="correo" id="correo">
+                </div>
+                <p>Si eligió teléfono elija la Fecha y la Hora</p>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha">
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" min="09:00" max="18:00">
 
+                <!--input type="password", type="search", type="url"-->
             </fieldset>
+            <input type="submit" value="Enviar" class="boton boton-verde">
 
         </form>
    
