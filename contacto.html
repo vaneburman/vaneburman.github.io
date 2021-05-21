@@ -4,12 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anuncio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Contacto</h1>
-    <a href="index.html">Volver</a>
-    
+    <header class="site-header">
+        <div class="contenedor contenido-heather">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo.svg" alt="Logotipo de Bienes Raices">
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div> <!-- barra-->
+           </div> <!-- contenedor -->
+    </header>
+  
+    <h1 class="fw 300 centrar-texto">Contacto</h1>
+    <img src="img/destacada3.jpg" alt="Imagen Principal">
+
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h2>
+        <form action="">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Tu Nombre">
+
+                <label for="email">E-mail</label>
+                <input type="email" id=email" placeholder="nombre@mail.com" required>
+                
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
+                
+                <label for="mensaje">mensaje</label>
+                <textarea id="mensaje"></textarea>
+                
+                <input type="submit">
+            </fieldset>
+
+            <fieldset>
+                <legend>Información sobre Propiedad</legend>
+                <label for="opciones">Vende o Compra</label>
+                <select  id="opciones">
+                    <option value="" disable selected>--seleccione--</option> <!--Está seleccionado por default pero se inhabilita-->
+                    <option value="Compra">Compra</option>
+                    <option value="Vende">Vende</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" min="0" max="100" step="2">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+
+                <p>Como desea ser Contactado:</p>
+                <label for="telefono2">Teléfono</label>
+                <input type="radio" name="contacto" value="telefono" id="telefono2">
+                <label for="correo">E-mail</label>
+                <input type="radio" name="contacto" value="correo" id="correo">
+
+
+            </fieldset>
+
+        </form>
+   
+   
+    </main>
+</footer>
 </body>
 </html>

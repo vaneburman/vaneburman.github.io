@@ -393,3 +393,10 @@ line-height: 1.3;
      justify-content: space-between;
      align-items: center;
  }
+
+ /*contacto*/
+
+ label {
+     display:block;
+     
+ }
